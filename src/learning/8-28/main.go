@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	test5([]int{1, 3, 5, 7, 8}, 8)
+	test1()
 }
 
 func test1() {
