@@ -54,7 +54,7 @@ func test4() {
 
 func test5(arr []int, n int) {
 	for r, s := range arr {
-		for i := r; i < len(arr); i++ {
+		for i := r + 1; i < len(arr); i++ {
 			if s+arr[i] == n {
 				fmt.Printf("(%d, %d)", r, i)
 			}

@@ -14,8 +14,21 @@ func twoSum(nums []int, target int) []int {
 	return nil
 }
 
+func twoSumm(nums []int, target int) []int {
+	for r, s := range nums {
+		for i := r + 1; i < len(nums); i++ {
+			if s+nums[i] == target {
+				return []int{r, i}
+			}
+		}
+	}
+	return nil
+}
+
 func main() {
-	nums := []int{2, 7, 9, 11}
-	ret := twoSum(nums, 13)
-	fmt.Println(ret)
+	nums := []int{3, 2, 4}
+	ret := twoSum(nums, 6)
+	rett := twoSumm(nums, 6)
+	fmt.Printf("ret=%d\n", ret)
+	fmt.Printf("rett%d\n", rett)
 }
